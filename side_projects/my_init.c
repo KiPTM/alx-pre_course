@@ -7,7 +7,7 @@ int main(void)
     char f, m, l;
     int age;
 
-    printf("Enter your Initials followed by your age : \n");
+    printf("Enter your Initials followed by your age: ");
 
     scanf("%c %c %c %d", &f, &m, &l, &age);
 
