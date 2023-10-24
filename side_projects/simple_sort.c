@@ -17,6 +17,22 @@ int main (void)
 	for(i=0; i<MAX; i++){
 		printf("item #%d: %d\n",i,data[i]);
 	}
+
+	/*simple sort algorithm*/
+	for(i=0; i<MAX; i++){
+		for (j=i; j<MAX; j++){
+			if(data[i] > data[j]){
+				tmp = data[i];
+				data[i] = data[j];
+				data[j] = tmp;
+			}
+		}
+	}
+	
+	printf("\nSorted data:\n");
+	for(i=0; i<MAX; i++) {
+		printf("item #%d: %d\n",i,data[i]);
+	}
 	
 	return(0);
 
