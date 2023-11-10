@@ -4,15 +4,15 @@
 #include <sys/wait.h>
 int main (void)
 {
-	pid_t pid;
+	pid_t tevin;
 
 	char *argv[] = {"/bin/ls", "-l", NULL};
 	
-	pid = fork();
+	tevin = fork();
 	
-	if (pid == -1)
+	if (tevin == -1)
 		return -1;
-	if (pid == 0)
+	if (tevin == 0)
 	{
 		int val = execve(argv[0], argv, NULL);
 
