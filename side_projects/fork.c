@@ -18,8 +18,10 @@ int main(void)
 
 	if (pid == 0)
 	{
-		sleep(7);
-		printf("I am the child process \n");
+		sleep(3);
+		getpid();
+
+		printf("I am the child process %u\n", pid );
 	}
 	else
 	{
